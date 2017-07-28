@@ -1,9 +1,11 @@
 menu:
   Home:
   Archives: archives
-
+  RSS: atom.xml
 widgets:
+- about
 - tag
+- recent_posts
 
 excerpt_link: Read More
 
@@ -32,3 +34,9 @@ facebook:
   comment_count: 5
   comment_width: 840
   comment_colorscheme: light
+
+avatar: ./uploads/avatar_tg.jpg
+
+link: 
+  name: Blog
+  href: https://blog.xuguorui.xyz
