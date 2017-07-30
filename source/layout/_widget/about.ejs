@@ -1,0 +1,23 @@
+<% if (site.tags.length){ %>
+  <div class="widget about">
+    <h3 class="title">
+      <%= __('about') %>
+    </h3>
+    <div class="entry">
+      <img class="avatar" src="<%- config.root %><%- theme.avatar %>">
+      <p class="author">
+        <%= config.author %>
+      </p>
+      <hr>
+
+
+      <a href="<%= theme.link.href%>">
+        <div class="link">
+          <p>
+            <%= theme.link.name %>
+        </div>
+      </a>
+      </p>
+    </div>
+  </div>
+  <% } %>
