@@ -10,14 +10,16 @@
       </p>
       <hr>
 
+      <div class="link">
+        <% for (var i in theme.menu){ %>
+          <span>
+              <a href="<%- config.link %><%- theme.link[i] %>">
+                <%= i %>
+              </a>
+            </span>
+          <% } %>
+      </div>
 
-      <a href="<%= theme.link.href%>">
-        <div class="link">
-          <p>
-            <%= theme.link.name %>
-        </div>
-      </a>
-      </p>
     </div>
   </div>
   <% } %>

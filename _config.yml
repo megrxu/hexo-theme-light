@@ -37,6 +37,7 @@ facebook:
 
 avatar: ./uploads/avatar_tg.jpg
 
-link: 
-  name: Blog
-  href: https://blog.xuguorui.xyz
+link:
+  Blog: https://blog.xuguorui.xyz
+  Github: https://github.com/megrxu
+  Telegram: https://t.me/TyteKa
