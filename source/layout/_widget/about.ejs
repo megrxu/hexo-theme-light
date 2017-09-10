@@ -9,15 +9,12 @@
         <%= config.author %>
       </p>
       <hr>
-
       <div class="link">
-        <% for (var i in theme.menu){ %>
-          <span>
-              <a href="<%- config.link %><%- theme.link[i] %>">
-                <%= i %>
-              </a>
-            </span>
-          <% } %>
+        <% for (var i in theme.link){ %>
+          <a href="<%- config.link %><%- theme.link[i] %>">
+          <span><%= i %></span>
+          </a>
+        <% } %>
       </div>
 
     </div>
