@@ -37,9 +37,14 @@
     <meta property="og:image" content="<%= config.cover %>"/>
   <% } %>
 
-  <link href="<%- config.root %>favicon.png" rel="icon">
+  <link href="<%- config.root %>uploads/favicon.ico" rel="icon">
   <link rel="alternate" href="<% if (theme.rss){ %><%- theme.rss %><% } else { %><%- config.root %>atom.xml<% } %>" title="<%= config.title %>" type="application/atom+xml">
   <link rel="stylesheet" href="<%- config.root %>css/style.css" media="screen" type="text/css">
   <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
   <%- partial('google_analytics') %>
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+  </script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
 </head>

@@ -1,8 +1,14 @@
-<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 <script src="<%- config.root %>js/jquery.imagesloaded.min.js"></script>
 <script src="<%- config.root %>js/gallery.js"></script>
 <script src="<%- config.root %>js/instantclick.min.js" data-no-instant></script>
-<script data-no-instant>InstantClick.init();</script>
+<script data-no-instant>
+InstantClick.on('change', function(isInitialLoad) {
+ if (isInitialLoad === false) {
+  if (typeof MathJax !== 'undefined') // support MathJax
+   MathJax.Hub.Queue(["Typeset",MathJax.Hub])}
+   })
+InstantClick.init();</script>
 
 <% if (config.disqus_shortname){ %>
 <script type="text/javascript">
@@ -12,7 +18,7 @@ var disqus_shortname = '<%= config.disqus_shortname %>';
   var dsq = document.createElement('script');
   dsq.type = 'text/javascript';
   dsq.async = true;
-  dsq.src = '//' + disqus_shortname + '.disqus.com/<% if (page.comments){ %>embed.js<% } else { %>count.js<% } %>';
+  dsq.src = 'https://' + disqus_shortname + '.disqus.com/<% if (page.comments){ %>embed.js<% } else { %>count.js<% } %>';
   (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
 }());
 </script>
