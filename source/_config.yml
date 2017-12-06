@@ -27,8 +27,8 @@ rss:
 
 comment_provider: disqus
 # Facebook comment
-facebook:
-  appid: 123456789012345
-  comment_count: 5
-  comment_width: 840
-  comment_colorscheme: light
+# facebook:
+#   appid: 123456789012345
+#   comment_count: 5
+#   comment_width: 840
+#   comment_colorscheme: light
