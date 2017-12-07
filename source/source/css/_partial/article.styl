@@ -2,7 +2,7 @@ icon-size = 32px
 icon-gap = 25px
 
 article
-  background #fff
+  background color-card
   &.page
     padding-left 20px
     .icon
@@ -27,7 +27,7 @@ article
       a
         &:after
           content '\f08e'
-          color color-meta
+          color color-title
           font 12px font-icon
           padding-left 10px
           vertical-align super
@@ -70,7 +70,7 @@ article
         font 24px/1 font-icon
         text-align center
         width 24px
-        color #fff
+        color color-hover
         margin-top -12px
         top 50%
 
@@ -94,7 +94,7 @@ article
       -webkit-margin-start auto
       -webkit-margin-end auto
       border-width 1px
-      border solid #eee 1px
+      border solid color-border 1px
 
   header
     .icon
@@ -125,7 +125,7 @@ article
     .title
       font-weight normal
       a
-        color color-font
+        color color-title
         &:hover
           color color-link
           text-decoration none
@@ -141,7 +141,7 @@ article
       margin-bottom 15px
 
     hr
-      border solid #eee 1px
+      border solid color-border 1px
 
     table
       border-collapse collapse
@@ -154,7 +154,7 @@ article
         white-space nowrap
         color color-font
         font-weight 600
-        background #eee
+        background color-hover
 
       td,
       th
@@ -163,10 +163,10 @@ article
         text-align left
 
     blockquote
-      background #FAFAFA
+      background color-quote
       padding 0 15px
-      color #666
-      border-left 4px solid #ddd
+      color color-font
+      border-left 4px solid color-border
       margin 0
       display: block
       footer
@@ -177,15 +177,15 @@ article
         cite
           &:before
             content '—'
-            color #ccc
+            color color-font
             padding 0 0.5em
 
     code, pre
       font-family font-mono
 
     code
-      background #eee
-      color #666
+      background color-hover
+      color color-font
       padding 0 5px
       margin 0 2px
       font-size 0.9em
@@ -193,7 +193,7 @@ article
       border-radius 3px
 
     pre
-      background #eee
+      background color-background
       border 1px solid color-border
       margin-top 15px
       overflow auto
