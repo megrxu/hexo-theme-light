@@ -4,7 +4,8 @@ menu:
   RSS: atom.xml
 widgets:
 - about
-- tag
+- category
+- tagcloud
 - recent_posts
 
 excerpt_link: Read More

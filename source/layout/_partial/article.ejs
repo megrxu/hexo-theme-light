@@ -39,4 +39,8 @@
   </div>
 </article>
 
+<% if (!index){ %>
+  <%- partial('pagination') %>
+<% } %>
+
 <%- partial('comment') %>
