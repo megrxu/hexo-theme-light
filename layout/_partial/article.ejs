@@ -40,7 +40,15 @@
 </article>
 
 <% if (!index){ %>
-  <%- partial('pagination') %>
+  <nav id="pagination">
+    <% if (item.prev){ %>
+      <a href="<%- config.root %><%- item.prev.path %>" class="alignleft prev"><%= __('prev') %></a>
+    <% } %>
+    <% if (item.next){ %>
+      <a href="<%- config.root %><%- item.next.path %>" class="alignright next"><%= __('next') %></a>
+    <% } %>
+    <div class="clearfix"></div>
+  </nav>
 <% } %>
 
 <%- partial('comment') %>
